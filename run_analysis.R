@@ -8,3 +8,5 @@ tblTraingDataY <- read.table("E://data/Dropbox/private/working/data science/gett
 tblTestData <- read.table("E://data/Dropbox/private/working/data science/getting and cleaning data/prj1/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt")
 tblTestDataX <- read.table("E://data/Dropbox/private/working/data science/getting and cleaning data/prj1/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt")
 tblTestDataY <- read.table("E://data/Dropbox/private/working/data science/getting and cleaning data/prj1/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/Y_test.txt")
+
+##
