@@ -16,7 +16,6 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ### Data Information ###
 
 For each record it is provided:
-======================================
 
 * Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 * Triaxial Angular velocity from the gyroscope. 
@@ -25,7 +24,7 @@ For each record it is provided:
 * An identifier of the subject who carried out the experiment.
 
 The dataset includes the following files:
-=========================================
+
 
 * 'README.txt'
 
