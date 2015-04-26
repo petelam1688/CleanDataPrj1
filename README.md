@@ -24,7 +24,7 @@ The following data files are needed:
 5. X_test.txt
 5. Y_test.txt
 
-They can be obtained from(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "here")
+They can be obtained from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ---
 
