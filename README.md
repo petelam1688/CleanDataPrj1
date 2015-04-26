@@ -30,6 +30,7 @@ The following R packates are needed:
 
 1. data.table
 2. reshape2
+
 ---
 
 ## How to run ##
