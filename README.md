@@ -1,8 +1,8 @@
-# Getting and Cleaning Data - #
+# Getting and Cleaning Data - Course Project 1 #
 
 ---
 
-## Course Project 1 ##
+## Introudction ##
 
 This project only contains 1 file called run_analysis.R which assume all the dataset to be local in the same file path.
 
@@ -26,8 +26,17 @@ The following data files are needed:
 
 They can be obtained from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
+The following R packates are needed:
+
+1. data.table
+2. reshape2
 ---
 
 ## How to run ##
+
+1. Download all the data files and put all the necessary data files into the current folder
+2. Place run_analysis.R in the same folder and execute it
+3. A completed tblDataFinal.txt will be generated in the same folder
+
 
  
