@@ -20,9 +20,31 @@ names(tblTestDataX) <- tblFeatures$V2
 names(tblTrainingDataY) <- "Activity"
 names(tblTestDataY) <- "Activity"
 
-
+## Requirement 1
 ## merge both training and test data together
-tblTrainingDataXY <- cbind(tblTrainingData, tblTrainingDataX, tblTrainingDataY)
-tblTestDataXY <- cbind(tblTestData, tblTestDataX, tblTestDataY)
+tblTrainingDataXY <- cbind(tblTrainingData, tblTrainingDataY, tblTrainingDataX)
+tblTestDataXY <- cbind(tblTestData, tblTestDataY, tblTestDataX)
 tblData <- rbind(tblTrainingDataXY, tblTestDataXY)
 
+## Requirement 2
+## find which columns are mean or std
+vMeanSTDCol <- grepl("mean", names(tblData)) | grepl("std", names(tblData))
+vMeanSTDCol[1:2] <- TRUE ## include subject id and activity id
+
+## extract only required columns
+tblDataFiltered <- tblData[, vMeanSTDCol]
+
+
+## Requirement 3 & 4
+## label column names correctively
+tblDataFiltered$Activity <- factor(tblDataFiltered$Activity, labels=c("Walking", "Walking Upstairs", "Walking Downstairs", "Sitting", "Standing", "Laying"))
+## don't know how to name the corresponding readings, but just laborious work to repeat the previous step for all the variables
+
+## Requirement 5
+## collapse reading columns into rows
+tblDataFilteredCollapseReadings <- melt(tblDataFiltered, id=c("ID", "Activity")) 
+tblDataFinal <- dcast(tblDataFilteredCollapseReadings, ID+Activity ~ variable, mean)
+
+
+## extract data into txt format
+write.csv(tblDataFinal, "E://data/Dropbox/private/working/data science/getting and cleaning data/CleanDataPrj1/tblDataFinal.csv", row.names=FALSE)
