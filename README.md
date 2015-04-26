@@ -1,4 +1,6 @@
-# Getting and Cleaning Data #
+# Getting and Cleaning Data - #
+
+---
 
 ## Course Project 1 ##
 
@@ -21,4 +23,11 @@ The following data files are needed:
 4. subject_test.txt
 5. X_test.txt
 5. Y_test.txt
+
+They can be obtained from(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "here")
+
+---
+
+## How to run ##
+
  
